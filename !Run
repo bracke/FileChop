@@ -1,0 +1,22 @@
+<Obey$Dir>.!Boot
+|
+Set FileChop$Help <FileChop$Dir>.!Help
+Set FileChop$Version "1.03"
+Set FileChop$Web "http://www.arcsite.de/hp/bracke/programming/mtools.html"
+Set FileChop$Title "FileChop"
+Set FileChop$Publisher "Bent Bracke"
+Set FileChop$Description "Takes a file and searches through that file for compilation units which are placed in separate files."
+|
+If "<System$Path>" = "" Then Error 0 System resources cannot be found
+WimpSlot -Min 128k -Max 128k
+
+RMEnsure SharedCLibrary 0 System:modules.clib
+RMEnsure SharedCLibrary 3.75 Error You need Clib 3.75 to run !FileChop
+RMEnsure FrontEnd 0 System:modules.frontend
+RMEnsure Frontend 1.13 Error You need version 1.13 of the FrontEnd module to run !FileChop
+RMEnsure TaskWindow 0 System:modules.task
+RMEnsure TaskWindow 0.29 Error You need version 0.29 of the taskwindow module to run !FileChop
+RMEnsure DDEUtils 0 System:modules.ddeutils
+RMEnsure DDEUtils 1.50 Error You need version 1.50 of the DDEUtils module to run !FileChop
+WimpSlot -Min 32k -Max 32k
+FrontEnd_Start -app FileChop -desc <FileChop$Dir>.desc

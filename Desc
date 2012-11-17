@@ -1,0 +1,41 @@
+# StrongEd$Mode = FrontEnd
+# This is a description of the wimp interface for FileChop
+
+tool_details_start
+   name          "FileChop";
+   command_is    "gnatchop ";
+   version       "1.03 (2005-03-13)";
+   wimpslot      2000k;
+tool_details_end
+
+metaoptions_start
+   has_text_window;
+   display_dft_is text;
+metaoptions_end
+
+dbox_start
+   #icon mappings
+   icons_start
+      icn 12 maps_to "-r";
+      icn 10 maps_to "-s";
+      icn 5  maps_to "-w";
+      icn 7  maps_to string;
+      icn 8  maps_to string;
+   icons_end
+
+   #default icon values
+   defaults
+      icn 12 off,
+      icn 10 off,
+      icn 5  off,
+      icn 7  "",
+      icn 8  "";
+                
+   #drags to dbox (and icon bar)
+   imports_start
+      drag_to icn 7 inserts icn 7;
+      drag_to icn 8 inserts icn 8;
+   imports_end
+dbox_end
+
+order_is  icn 12, icn 10, icn 5, icn 7, icn 8;

@@ -1,0 +1,10 @@
+Set FileChop$Dir <Obey$Dir>
+|
+Set FileChop$Help <FileChop$Dir>.!Help
+Set FileChop$Version "1.03"
+Set FileChop$Web "http://www.arcsite.de/hp/bracke/programming/mtools.html"
+Set FileChop$Title "FileChop"
+Set FileChop$Publisher "Bent Bracke"
+Set FileChop$Description "Takes a file and searches through that file for compilation units which are placed in separate files."
+|
+Iconsprites <FileChop$Dir>.!Sprites

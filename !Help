@@ -1,0 +1,38 @@
+FileChop
+~~~~~~~~
+Purpose: FileChop is a frontend for GNATchop and therefore requires
+         GNATchop to present in the run path.
+
+         GNATchop takes a file and searches through that file for
+         compilation units which are placed in separate files.
+
+Frontend use
+============
+ 
+Setup window:
+
+   Icon              Action/Meaning                       Default
+   ----              --------------                       -------
+   Sourcefile        This is the path of source file        nil
+                     (mandatory, typed or dragged)
+   Target            Where the files are placed             nil
+                     (typed or dragged)
+   Source_Ref.       Generates Source_Ref. pragmas          off
+   Comp. Script      Generates a compilation script         off
+   Overwrite         Existing files are overwritten         off
+
+Setup Menu:
+
+   Entry             Action/Meaning                       Default
+   -----             --------------                       -------
+   Command line  =>  any other options can be entered.      auto
+                     (See the manual for full details.)
+
+Display (FileChop) Window:
+
+   This window is opened automatically and displays any output
+   produced by GNATchop.
+
+Display (FileChop) Menu:
+
+   From this menu you can pause/continue and abort GNATchop.
