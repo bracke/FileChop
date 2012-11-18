@@ -4,7 +4,7 @@ FileChop is a frontend for GNATchop and therefore requires GNATchop to present i
 
 GNATchop takes a file and searches through that file for compilation units which are placed in separate files.
 
-NOTE: this app is a RISC OS app.
+NOTE: this app is a RISC OS app and will not run on other platforms.
 
 # Frontend use
  
